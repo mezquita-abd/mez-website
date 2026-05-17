@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoya el Centro - Mezquita Abdullah</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <span>Mezquita Abdullah</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-translate="nav_home">Inicio</a></li>
+                <li><a href="index.html#discover" data-translate="nav_discover">Mezquita</a></li>
+                <li><a href="new-muslims.html" data-translate="nav_new_muslims">Nuevos Musulmanes</a></li>
+                <li><a href="events.html" data-translate="nav_events">Eventos</a></li>
+                <li><a href="calendar.html" data-translate="nav_calendar">Calendario</a></li>
+                <li><a href="visit.html" data-translate="nav_visit">Visítanos</a></li>
+                <li><a href="contact.html" data-translate="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn-donate-nav active">
+                    <i class="fas fa-heart"></i>
+                    <span data-translate="donate_btn">Donar</span>
+                </a>
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">ES</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button data-lang="es">🇪🇸 Español</button>
+                        <button data-lang="en">🇬🇧 English</button>
+                        <button data-lang="ar">🇸🇦 العربية</button>
+                        <button data-lang="fr">🇫🇷 Français</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-header donate-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="badge"><i class="fas fa-hand-holding-heart"></i> <span data-translate="don_badge">Sadaqah Yariyah - Caridad continua</span></span>
+                <h1 data-translate="don_title">Tu apoyo construye el futuro</h1>
+                <p data-translate="don_subtitle">Cada donación nos ayuda a mantener este lugar sagrado, educar a la comunidad y abrir puertas al Islam.</p>
+                
+                <div class="hadith-banner">
+                    <p data-translate="don_hadith1">"Cuando un ser humano muere, todas sus obras cesan, excepto tres: una sadaqah yariyah (caridad continua), un conocimiento útil, o un hijo justo que ruegue por él"</p>
+                    <span data-translate="don_hadith_source">- Profeta Muhammad ﷺ (Muslim)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Goals Progress -->
+    <section class="goals-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-translate="goals_tag">Objetivos actuales</span>
+                <h2 data-translate="goals_title">🎯 Nuestras metas</h2>
+                <p data-translate="goals_subtitle">Sé parte de estos proyectos. Cada dólar importa.</p>
+            </div>
+
+            <div class="goals-list">
+                <div class="goal-card priority">
+                    <div class="goal-header">
+                        <span class="goal-badge urgent" data-translate="urgent_badge">⚡ Urgente</span>
+                        <h3 data-translate="goal1_title">Renovación de la sala de oración</h3>
+                    </div>
+                    <p data-translate="goal1_desc">Necesitamos renovar el suelo y la iluminación para una mejor experiencia espiritual.</p>
+                    <div class="progress-info">
+                        <span><strong>$3,250</strong> <span data-translate="of">de</span> <strong>$5,000</strong></span>
+                        <span class="progress-percent">65%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+                    <p class="goal-supporters"><i class="fas fa-users"></i> <span>42 <span data-translate="supporters">donantes</span></span></p>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-header">
+                        <span class="goal-badge" data-translate="ongoing_badge">📚 En curso</span>
+                        <h3 data-translate="goal2_title">Programa de Tahfiz al-Qur'an</h3>
+                    </div>
+                    <p data-translate="goal2_desc">Materiales educativos y salarios de los maestros para 80 estudiantes.</p>
+                    <div class="progress-info">
+                        <span><strong>$1,800</strong> <span data-translate="of">de</span> <strong>$3,000</strong></span>
+                        <span class="progress-percent">60%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+                    <p class="goal-supporters"><i class="fas fa-users"></i> <span>28 <span data-translate="supporters">donantes</span></span></p>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-header">
+                        <span class="goal-badge" data-translate="ramadan_badge">🌙 Ramadán</span>
+                        <h3 data-translate="goal3_title">Iftares para familias necesitadas</h3>
+                    </div>
+                    <p data-translate="goal3_desc">Distribución de comida para 200 familias durante el sagrado mes.</p>
+                    <div class="progress-info">
+                        <span><strong>$4,500</strong> <span data-translate="of">de</span> <strong>$10,000</strong></span>
+                        <span class="progress-percent">45%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+                    <p class="goal-supporters"><i class="fas fa-users"></i> <span>67 <span data-translate="supporters">donantes</span></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form-section" id="donate">
+        <div class="container">
+            <div class="donation-wrapper">
+                <div class="donation-left">
+                    <h2 data-translate="form_title">💚 Haz tu donación</h2>
+                    <p data-translate="form_subtitle">Elige el monto y la frecuencia que se ajuste a ti.</p>
+
+                    <form class="donation-form" id="donationForm">
+                        <!-- Frequency -->
+                        <div class="form-section">
+                            <label class="form-section-label" data-translate="frequency_label">Frecuencia</label>
+                            <div class="toggle-group">
+                                <button type="button" class="toggle-btn active" data-freq="once" data-translate="freq_once">Una vez</button>
+                                <button type="button" class="toggle-btn" data-freq="monthly" data-translate="freq_monthly">Mensual</button>
+                                <button type="button" class="toggle-btn" data-freq="yearly" data-translate="freq_yearly">Anual</button>
+                            </div>
+                        </div>
+
+                        <!-- Amount -->
+                        <div class="form-section">
+                            <label class="form-section-label" data-translate="amount_label">Monto (USD)</label>
+                            <div class="amount-grid">
+                                <button type="button" class="amount-btn" data-amount="10">$10</button>
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn active" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn" data-amount="100">$100</button>
+                                <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                <button type="button" class="amount-btn" data-amount="500">$500</button>
+                            </div>
+                            <input type="number" id="customAmount" placeholder="Otro monto" min="1" data-translate-placeholder="custom_amount">
+                        </div>
+
+                        <!-- Project -->
+                        <div class="form-section">
+                            <label class="form-section-label" data-translate="project_label">Destinar a</label>
+                            <select id="projectSelect">
+                                <option value="general" data-translate="proj_general">Donación general</option>
+                                <option value="renovation" data-translate="proj_renovation">Renovación de la sala</option>
+                                <option value="tahfiz" data-translate="proj_tahfiz">Programa Tahfiz Corán</option>
+                                <option value="ramadan" data-translate="proj_ramadan">Iftares de Ramadán</option>
+                                <option value="zakat" data-translate="proj_zakat">Zakat</option>
+                                <option value="sadaqah" data-translate="proj_sadaqah">Sadaqah</option>
+                            </select>
+                        </div>
+
+                        <!-- Personal info -->
+                        <div class="form-section">
+                            <label class="form-section-label" data-translate="info_label">Tu información (para el recibo)</label>
+                            <input type="text" placeholder="Nombre completo" required data-translate-placeholder="form_name">
+                            <input type="email" placeholder="Email (para recibo fiscal)" required data-translate-placeholder="form_email">
+                            <input type="text" placeholder="Teléfono (opcional)" data-translate-placeholder="form_phone">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span data-translate="anonymous">Hacer donación anónima</span>
+                            </label>
+                        </div>
+
+                        <!-- Payment Methods -->
+                        <div class="form-section">
+                            <label class="form-section-label" data-translate="payment_label">Método de pago</label>
+                            <div class="payment-methods">
+                                <button type="button" class="payment-method active">
+                                    <i class="far fa-credit-card"></i>
+                                    <span>Visa / Mastercard</span>
+                                </button>
+                                <button type="button" class="payment-method">
+                                    <i class="fab fa-paypal"></i>
+                                    <span>PayPal</span>
+                                </button>
+                                <button type="button" class="payment-method">
+                                    <i class="fas fa-university"></i>
+                                    <span>Zelle</span>
+                                </button>
+                                <button type="button" class="payment-method">
+                                    <i class="fab fa-bitcoin"></i>
+                                    <span data-translate="crypto">Cripto</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="total-summary">
+                            <div class="total-row">
+                                <span data-translate="your_donation">Tu donación:</span>
+                                <strong id="totalAmount">$50 USD</strong>
+                            </div>
+                            <p class="frequency-note" id="frequencyNote" data-translate="freq_note_once">Una sola vez</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-large">
+                            <i class="fas fa-lock"></i>
+                            <span data-translate="donate_now">Donar de forma segura</span>
+                        </button>
+
+                        <p class="security-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-translate="security">Conexión 100% segura. Recibo fiscal automático.</span>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="donation-right">
+                    <!-- Quranic encouragement -->
+                    <div class="motivation-card">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p data-translate="motivation1">"Quienes gastan sus bienes en el camino de Allah son como una semilla que produce siete espigas, en cada espiga hay cien granos. Allah multiplica a quien Él quiere"</p>
+                        <span class="motivation-source">- Al-Baqarah 2:261</span>
+                    </div>
+
+                    <div class="motivation-card">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p data-translate="motivation2">"La sadaqah no disminuye los bienes en absoluto. Allah no aumenta a Su siervo en perdón sino con más honor"</p>
+                        <span class="motivation-source">- Hadiz Sahih (Muslim)</span>
+                    </div>
+
+                    <div class="impact-card">
+                        <h3 data-translate="impact_title">¿En qué se usa tu donación?</h3>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> <span data-translate="impact1">40% - Mantenimiento de la mezquita</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="impact2">30% - Programa de educación islámica</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="impact3">20% - Ayuda a familias necesitadas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="impact4">10% - Actividades para la comunidad</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="trust-card">
+                        <h4 data-translate="trust_title"><i class="fas fa-shield-alt"></i> Confianza y transparencia</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <span data-translate="trust1">Recibo fiscal automático por email</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translate="trust2">Pagos procesados por Stripe / PayPal</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translate="trust3">Reporte anual público de gastos</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translate="trust4">Centro registrado oficialmente</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other ways to give -->
+    <section class="other-ways">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-translate="other_tag">Otras formas</span>
+                <h2 data-translate="other_title">Otras maneras de apoyar</h2>
+            </div>
+
+            <div class="other-ways-grid">
+                <div class="other-way">
+                    <i class="fas fa-university"></i>
+                    <h3 data-translate="ow1_title">Transferencia bancaria</h3>
+                    <p data-translate="ow1_desc">Contacta para recibir nuestros datos bancarios internacionales.</p>
+                    <a href="contact.html" data-translate="ow1_btn">Obtener datos →</a>
+                </div>
+                <div class="other-way">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3 data-translate="ow2_title">Donación en persona</h3>
+                    <p data-translate="ow2_desc">Visítanos en la mezquita y entrega tu donación directamente.</p>
+                    <a href="visit.html" data-translate="ow2_btn">Cómo llegar →</a>
+                </div>
+                <div class="other-way">
+                    <i class="fas fa-tasks"></i>
+                    <h3 data-translate="ow3_title">Voluntariado</h3>
+                    <p data-translate="ow3_desc">Dona tu tiempo y habilidades. Necesitamos profesores, traductores y más.</p>
+                    <a href="contact.html" data-translate="ow3_btn">Quiero ayudar →</a>
+                </div>
+                <div class="other-way">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3 data-translate="ow4_title">Por WhatsApp</h3>
+                    <p data-translate="ow4_desc">Contáctanos directamente para donaciones especiales.</p>
+                    <a href="https://wa.me/5359490936" target="_blank" data-translate="ow4_btn">Escribir →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="Logo">
+                        <h3>Mezquita Abdullah</h3>
+                    </div>
+                    <p data-translate="footer_about">El primer centro islámico de Cuba.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18zo94WL5i/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mezquita__abdullah" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029vb7hd1kkmcpjx0nllu06" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-translate="footer_links">Navegación</h4>
+                    <ul>
+                        <li><a href="new-muslims.html" data-translate="nav_new_muslims">Nuevos Musulmanes</a></li>
+                        <li><a href="events.html" data-translate="nav_events">Eventos</a></li>
+                        <li><a href="calendar.html" data-translate="nav_calendar">Calendario</a></li>
+                        <li><a href="donate.html" data-translate="donate_btn">Donar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-translate="footer_contact">Contacto</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Obispo #13, Habana Vieja</li>
+                        <li><i class="fas fa-phone"></i> +53 59490936</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mezquita Abdullah - La Habana, Cuba.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

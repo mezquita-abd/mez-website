@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu siguiente paso después del Islam - Mezquita Abdullah</title>
+    <meta name="description" content="Guía completa para nuevos musulmanes: aprender a rezar, hacer wudu, leer el Corán y conectar con un mentor.">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.jpg" alt="Mezquita Abdullah Logo">
+                <span>Mezquita Abdullah</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-translate="nav_home">Inicio</a></li>
+                <li><a href="index.html#discover" data-translate="nav_discover">Mezquita</a></li>
+                <li><a href="new-muslims.html" class="active" data-translate="nav_new_muslims">Nuevos Musulmanes</a></li>
+                <li><a href="events.html" data-translate="nav_events">Eventos</a></li>
+                <li><a href="calendar.html" data-translate="nav_calendar">Calendario</a></li>
+                <li><a href="visit.html" data-translate="nav_visit">Visítanos</a></li>
+                <li><a href="contact.html" data-translate="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn-donate-nav">
+                    <i class="fas fa-heart"></i>
+                    <span data-translate="donate_btn">Donar</span>
+                </a>
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">ES</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button data-lang="es">🇪🇸 Español</button>
+                        <button data-lang="en">🇬🇧 English</button>
+                        <button data-lang="ar">🇸🇦 العربية</button>
+                        <button data-lang="fr">🇫🇷 Français</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header nm-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="badge"><i class="fas fa-star-and-crescent"></i> <span data-translate="nm_badge">Bienvenido a la familia del Islam</span></span>
+                <h1 data-translate="nm_title">Tu siguiente paso después del Islam</h1>
+                <p data-translate="nm_subtitle">Aceptar el Islam es solo el comienzo de un hermoso viaje. Estamos aquí para acompañarte paso a paso, sin presión, con paciencia y amor.</p>
+                <div class="hero-quote">
+                    <p>"El Islam comenzó extraño y volverá a ser extraño como comenzó. Bienaventurados los extraños"</p>
+                    <span data-translate="hadith_source">- Hadiz auténtico (Muslim)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Steps -->
+    <section class="journey-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-translate="journey_tag">Tu camino</span>
+                <h2 data-translate="journey_title">Los primeros pasos</h2>
+                <p data-translate="journey_subtitle">No tienes que aprender todo de una vez. Avanza a tu ritmo.</p>
+            </div>
+
+            <div class="journey-timeline">
+                <div class="journey-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <i class="fas fa-hands-wash step-icon"></i>
+                        <h3 data-translate="step1_title">Aprende el Wudu (ablución)</h3>
+                        <p data-translate="step1_desc">La purificación antes de la oración. Es simple y se aprende en minutos.</p>
+                        <div class="video-links">
+                            <a href="https://www.youtube.com/watch?v=BiPo1HiKMNk" target="_blank" class="video-link es"><i class="fab fa-youtube"></i> <span data-translate="lang_es">Español</span></a>
+                            <a href="https://www.youtube.com/watch?v=PEHmTr1NPV8" target="_blank" class="video-link en"><i class="fab fa-youtube"></i> <span data-translate="lang_en">English</span></a>
+                            <a href="https://www.youtube.com/watch?v=YjxLZIFFLLg" target="_blank" class="video-link ar"><i class="fab fa-youtube"></i> <span data-translate="lang_ar">العربية</span></a>
+                            <a href="https://www.youtube.com/watch?v=cZBNqgI5GtA" target="_blank" class="video-link fr"><i class="fab fa-youtube"></i> <span data-translate="lang_fr">Français</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <i class="fas fa-pray step-icon"></i>
+                        <h3 data-translate="step2_title">Aprende a rezar (Salat)</h3>
+                        <p data-translate="step2_desc">5 oraciones diarias. Cada una toma solo 5-10 minutos. Te enseñamos paso a paso.</p>
+                        <div class="video-links">
+                            <a href="https://www.youtube.com/watch?v=Q6PpkmAUmRk" target="_blank" class="video-link es"><i class="fab fa-youtube"></i> <span data-translate="lang_es">Español</span></a>
+                            <a href="https://www.youtube.com/watch?v=4XJUiC6q_60" target="_blank" class="video-link en"><i class="fab fa-youtube"></i> <span data-translate="lang_en">English</span></a>
+                            <a href="https://www.youtube.com/watch?v=mPyqVer7gLo" target="_blank" class="video-link ar"><i class="fab fa-youtube"></i> <span data-translate="lang_ar">العربية</span></a>
+                            <a href="https://www.youtube.com/watch?v=t1RcEAt3pUw" target="_blank" class="video-link fr"><i class="fab fa-youtube"></i> <span data-translate="lang_fr">Français</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <i class="fas fa-book-quran step-icon"></i>
+                        <h3 data-translate="step3_title">Comienza a leer el Corán</h3>
+                        <p data-translate="step3_desc">Empieza con suras cortas. Lee la traducción primero, luego aprende el árabe poco a poco.</p>
+                        <div class="resource-links">
+                            <a href="https://quran.com/es" target="_blank" class="resource-btn"><i class="fas fa-book"></i> Quran.com Español</a>
+                            <a href="https://quran.com" target="_blank" class="resource-btn"><i class="fas fa-book"></i> Quran.com English</a>
+                            <a href="https://qurancomplex.gov.sa/" target="_blank" class="resource-btn"><i class="fas fa-mosque"></i> <span data-translate="res_madinah">Complejo Rey Fahd (Madinah)</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <i class="fas fa-user-friends step-icon"></i>
+                        <h3 data-translate="step4_title">Encuentra un mentor</h3>
+                        <p data-translate="step4_desc">Un hermano o hermana experimentado que te acompañará en tus preguntas y dudas. ¡Gratis!</p>
+                        <a href="#mentors" class="btn btn-primary">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span data-translate="find_mentor">Solicitar un mentor</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Request Section -->
+    <section class="mentor-section" id="mentors">
+        <div class="container">
+            <div class="mentor-grid">
+                <div class="mentor-info">
+                    <span class="section-tag light" data-translate="mentor_tag">Apoyo personal</span>
+                    <h2 data-translate="mentor_title">Solicita un mentor personal</h2>
+                    <p data-translate="mentor_desc">Te conectaremos con un hermano o hermana voluntario que hable tu idioma. Te apoyará con paciencia en tu nuevo camino.</p>
+                    
+                    <div class="mentor-features">
+                        <div class="mentor-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="mf1">100% gratuito</span>
+                        </div>
+                        <div class="mentor-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="mf2">Disponible en 4 idiomas</span>
+                        </div>
+                        <div class="mentor-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="mf3">Hombres y mujeres voluntarios</span>
+                        </div>
+                        <div class="mentor-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-translate="mf4">Confidencial y respetuoso</span>
+                        </div>
+                    </div>
+
+                    <div class="quick-contact">
+                        <a href="https://wa.me/5359490936" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-translate="contact_wa">Contactar por WhatsApp</span>
+                        </a>
+                        <a href="tel:+5359490936" class="btn btn-outline">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="contact_call">Llamar al +53 59490936</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mentor-form-wrapper">
+                    <form class="mentor-form" id="mentorForm">
+                        <h3 data-translate="mentor_form_title">Solicita tu mentor</h3>
+                        <div class="form-group">
+                            <label data-translate="form_name_label">Tu nombre</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="form_contact_label">Teléfono o email</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="form_lang_label">Idioma preferido</label>
+                            <select required>
+                                <option value="es">Español</option>
+                                <option value="en">English</option>
+                                <option value="ar">العربية</option>
+                                <option value="fr">Français</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="form_mentor_type_label">Prefiero un mentor</label>
+                            <select required>
+                                <option value="" data-translate="form_select_opt">Selecciona</option>
+                                <option value="m" data-translate="form_male">Hermano (hombre)</option>
+                                <option value="f" data-translate="form_female">Hermana (mujer)</option>
+                                <option value="any" data-translate="form_any">Cualquiera</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label data-translate="form_questions_label">¿Tienes alguna pregunta o necesidad específica?</label>
+                            <textarea rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-translate="form_submit_mentor">Solicitar mentor</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Resources -->
+    <section class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-translate="res_tag">Recursos recomendados</span>
+                <h2 data-translate="res_title">Libros y videos para empezar</h2>
+                <p data-translate="res_subtitle">Una selección curada de los mejores recursos para nuevos musulmanes.</p>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-book resource-icon"></i>
+                    <h3 data-translate="book1_title">"Don't Be Sad" - La No Te Entristezcas</h3>
+                    <p data-translate="book1_author">Por Dr. Aaidh al-Qarni</p>
+                    <p data-translate="book1_desc">Un best-seller islámico que ofrece consuelo y sabiduría para superar dificultades.</p>
+                    <a href="https://archive.org/details/dont-be-sad" target="_blank" class="resource-link"><span data-translate="read_free">Leer gratis</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fas fa-book resource-icon"></i>
+                    <h3 data-translate="book2_title">"The Sealed Nectar" - El Néctar Sellado</h3>
+                    <p data-translate="book2_author">Por Safiur Rahman Mubarakpuri</p>
+                    <p data-translate="book2_desc">La mejor biografía del Profeta Muhammad ﷺ, premiada internacionalmente.</p>
+                    <a href="https://archive.org/details/sealed-nectar" target="_blank" class="resource-link"><span data-translate="read_free">Leer gratis</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fab fa-youtube resource-icon" style="color: #ff0000;"></i>
+                    <h3>Yaqeen Institute</h3>
+                    <p data-translate="yaqeen_desc">Contenido académico moderno sobre el Islam, en múltiples idiomas.</p>
+                    <a href="https://yaqeeninstitute.org/" target="_blank" class="resource-link"><span data-translate="visit_site">Visitar sitio</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fab fa-youtube resource-icon" style="color: #ff0000;"></i>
+                    <h3>Bayyinah TV - Nouman Ali Khan</h3>
+                    <p data-translate="bayyinah_desc">Tafsir del Corán claro y profundo en inglés con subtítulos.</p>
+                    <a href="https://www.youtube.com/@nakcollection" target="_blank" class="resource-link"><span data-translate="watch_videos">Ver videos</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fas fa-mobile-alt resource-icon"></i>
+                    <h3>Muslim Pro App</h3>
+                    <p data-translate="muslimpro_desc">Horarios de oración, Corán, dhikr y dirección de la Qibla en tu móvil.</p>
+                    <a href="https://www.muslimpro.com/" target="_blank" class="resource-link"><span data-translate="download_app">Descargar app</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fas fa-globe resource-icon"></i>
+                    <h3>IslamHouse.com</h3>
+                    <p data-translate="islamhouse_desc">Miles de libros y audios islámicos gratuitos en más de 100 idiomas.</p>
+                    <a href="https://islamhouse.com/es/" target="_blank" class="resource-link"><span data-translate="explore">Explorar</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Encouragement Quote -->
+    <section class="encouragement-section">
+        <div class="container">
+            <div class="encouragement-content">
+                <i class="fas fa-quote-right"></i>
+                <p data-translate="encouragement_text">"Cuando un siervo se acerca a Allah un palmo, Allah se acerca a él un codo. Y cuando se acerca un codo, Allah se acerca un brazo. Y cuando viene a Allah caminando, Allah viene a él corriendo"</p>
+                <span data-translate="encouragement_source">- Hadiz Qudsi (Bujari)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="Logo">
+                        <h3>Mezquita Abdullah</h3>
+                    </div>
+                    <p data-translate="footer_about">El primer centro islámico de Cuba.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/18zo94WL5i/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mezquita__abdullah" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029vb7hd1kkmcpjx0nllu06" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-translate="footer_links">Navegación</h4>
+                    <ul>
+                        <li><a href="new-muslims.html" data-translate="nav_new_muslims">Nuevos Musulmanes</a></li>
+                        <li><a href="events.html" data-translate="nav_events">Eventos</a></li>
+                        <li><a href="calendar.html" data-translate="nav_calendar">Calendario</a></li>
+                        <li><a href="donate.html" data-translate="donate_btn">Donar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-translate="footer_contact">Contacto</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Obispo #13, Habana Vieja</li>
+                        <li><i class="fas fa-phone"></i> +53 59490936</li>
+                        <li><i class="fas fa-envelope"></i> info@mezquitaabdullah.cu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mezquita Abdullah - La Habana, Cuba.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="donate.html" class="donate-float">
+        <i class="fas fa-hand-holding-heart"></i>
+        <span data-translate="donate_float">Apoya el centro</span>
+    </a>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
