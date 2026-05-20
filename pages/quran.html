@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corán - Quba</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-circle"><i class="fas fa-mosque"></i></div>
+                <span>Quba</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quran.html" class="active">Corán</a></li>
+                <li><a href="prayer-times.html">Oración</a></li>
+                <li><a href="calendar.html">Calendario</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="wellness.html">Bienestar</a></li>
+                <li><a href="about.html">Acerca</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">ES</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button data-lang="es">🇪🇸 Español</button>
+                        <button data-lang="en">🇬🇧 English</button>
+                        <button data-lang="ar">🇸🇦 العربية</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container page-header-content">
+            <h1><i class="fas fa-book-quran"></i> El Sagrado Corán</h1>
+            <p>114 suras con audio, traducción al español, inglés y árabe original</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="surah-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar sura por nombre o número..." id="surahSearch">
+            </div>
+
+            <div class="surah-grid" id="surahGrid">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none; padding-top:0;">
+                <p>© 2026 Quba. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Sample list of surahs (first 30 + a few notable ones)
+        const surahs = [
+            {n:1, name:"Al-Fatiha", ar:"الفاتحة", trans:"La Apertura", verses:7, type:"Mecana"},
+            {n:2, name:"Al-Baqarah", ar:"البقرة", trans:"La Vaca", verses:286, type:"Medinense"},
+            {n:3, name:"Al-Imran", ar:"آل عمران", trans:"La Familia de Imran", verses:200, type:"Medinense"},
+            {n:4, name:"An-Nisa", ar:"النساء", trans:"Las Mujeres", verses:176, type:"Medinense"},
+            {n:5, name:"Al-Ma'idah", ar:"المائدة", trans:"La Mesa Servida", verses:120, type:"Medinense"},
+            {n:6, name:"Al-An'am", ar:"الأنعام", trans:"Los Ganados", verses:165, type:"Mecana"},
+            {n:7, name:"Al-A'raf", ar:"الأعراف", trans:"Los Lugares Elevados", verses:206, type:"Mecana"},
+            {n:8, name:"Al-Anfal", ar:"الأنفال", trans:"Los Botines", verses:75, type:"Medinense"},
+            {n:9, name:"At-Tawbah", ar:"التوبة", trans:"El Arrepentimiento", verses:129, type:"Medinense"},
+            {n:10, name:"Yunus", ar:"يونس", trans:"Jonás", verses:109, type:"Mecana"},
+            {n:11, name:"Hud", ar:"هود", trans:"Hud", verses:123, type:"Mecana"},
+            {n:12, name:"Yusuf", ar:"يوسف", trans:"José", verses:111, type:"Mecana"},
+            {n:13, name:"Ar-Ra'd", ar:"الرعد", trans:"El Trueno", verses:43, type:"Medinense"},
+            {n:14, name:"Ibrahim", ar:"إبراهيم", trans:"Abraham", verses:52, type:"Mecana"},
+            {n:15, name:"Al-Hijr", ar:"الحجر", trans:"Al-Hijr", verses:99, type:"Mecana"},
+            {n:18, name:"Al-Kahf", ar:"الكهف", trans:"La Caverna", verses:110, type:"Mecana"},
+            {n:19, name:"Maryam", ar:"مريم", trans:"María", verses:98, type:"Mecana"},
+            {n:24, name:"An-Nur", ar:"النور", trans:"La Luz", verses:64, type:"Medinense"},
+            {n:36, name:"Ya-Sin", ar:"يس", trans:"Ya-Sin", verses:83, type:"Mecana"},
+            {n:55, name:"Ar-Rahman", ar:"الرحمن", trans:"El Compasivo", verses:78, type:"Medinense"},
+            {n:56, name:"Al-Waqi'ah", ar:"الواقعة", trans:"El Suceso", verses:96, type:"Mecana"},
+            {n:67, name:"Al-Mulk", ar:"الملك", trans:"La Soberanía", verses:30, type:"Mecana"},
+            {n:78, name:"An-Naba", ar:"النبأ", trans:"La Noticia", verses:40, type:"Mecana"},
+            {n:93, name:"Ad-Duha", ar:"الضحى", trans:"La Mañana", verses:11, type:"Mecana"},
+            {n:94, name:"Al-Inshirah", ar:"الشرح", trans:"La Apertura del Pecho", verses:8, type:"Mecana"},
+            {n:97, name:"Al-Qadr", ar:"القدر", trans:"El Destino", verses:5, type:"Mecana"},
+            {n:108, name:"Al-Kawthar", ar:"الكوثر", trans:"La Abundancia", verses:3, type:"Mecana"},
+            {n:109, name:"Al-Kafirun", ar:"الكافرون", trans:"Los Infieles", verses:6, type:"Mecana"},
+            {n:112, name:"Al-Ikhlas", ar:"الإخلاص", trans:"La Sinceridad", verses:4, type:"Mecana"},
+            {n:113, name:"Al-Falaq", ar:"الفلق", trans:"El Alba", verses:5, type:"Mecana"},
+            {n:114, name:"An-Nas", ar:"الناس", trans:"Los Hombres", verses:6, type:"Mecana"}
+        ];
+
+        function renderSurahs(list) {
+            const grid = document.getElementById('surahGrid');
+            grid.innerHTML = list.map(s => `
+                <div class="surah-card" onclick="alert('Abriendo sura ${s.name}...')">
+                    <div class="surah-number"><span>${s.n}</span></div>
+                    <div class="surah-info">
+                        <h3>${s.name}</h3>
+                        <p>${s.trans} · ${s.verses} versículos · ${s.type}</p>
+                    </div>
+                    <div class="surah-arabic">${s.ar}</div>
+                </div>
+            `).join('');
+        }
+        renderSurahs(surahs);
+
+        document.getElementById('surahSearch').addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase().trim();
+            const filtered = surahs.filter(s =>
+                s.name.toLowerCase().includes(q) ||
+                s.trans.toLowerCase().includes(q) ||
+                s.ar.includes(q) ||
+                String(s.n) === q
+            );
+            renderSurahs(filtered);
+        });
+    </script>
+</body>
+</html>
